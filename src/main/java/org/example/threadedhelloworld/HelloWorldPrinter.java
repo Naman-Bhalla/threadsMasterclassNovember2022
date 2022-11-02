@@ -1,6 +1,6 @@
-package org.example.threadedhelloworldrunnables;
+package org.example.threadedhelloworld;
 
-public class HelloWorldPrinter implements Runnable {
+public class HelloWorldPrinter extends Thread {
 
     @Override
     public void run() {

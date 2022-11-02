@@ -1,8 +1,9 @@
-package org.example.threadedhelloworld;
+package org.example.threadedhelloworldrunnables;
 
 public class Client {
     public static void main(String[] args) {
-        HelloWorldPrinter helloWorldPrinter = new HelloWorldPrinter();
+        Thread helloWorldPrinter = new Thread(new HelloWorldPrinter());
+        // creating an object of thread class by passing the runnable to it
         helloWorldPrinter.start();
 
         System.out.println("Hello World " + Thread.currentThread().getName());
