@@ -15,5 +15,6 @@ public class Client {
         }
 
         Thread.sleep(10000000);
+		executorService.shutdown();
     }
 }
