@@ -19,7 +19,7 @@ public class Client {
         for (int i = 0; i < sortedArray.size(); ++i) {
             System.out.println(sortedArray.get(i));
         }
-
+		executorService.shutdown();
 
 
     }

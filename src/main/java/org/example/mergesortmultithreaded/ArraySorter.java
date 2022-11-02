@@ -65,7 +65,7 @@ public class ArraySorter implements Callable <List<Integer>> {
             sortedArray.add(rightSortedArray.get(j));
             j++;
         }
-
+		executorService.shutdown();
         return sortedArray;
     }
 }
